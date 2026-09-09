@@ -41,5 +41,10 @@ public class playerMovement : MonoBehaviour
 
         _speed -= amount;
         _speed --;
+
+        if (_speed <= 0)
+        {
+            _speed = 1;
+        }
     }
 }
